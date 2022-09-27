@@ -30,8 +30,8 @@ const transporter = nodemailer.createTransport({
 route.post("/contact", (req, res) => {
   const { to, subject, text } = req.body;
   const mailData = {
-    from: "youremail@gmail.com" || "test@mail.com",
-    to: to || "to@mail.com",
+    from: "j.sastre@cadt.com",
+    to: to || "j.sastre@cadt.com",
     subject: subject || "no subject",
     text: text || "no message",
   };
